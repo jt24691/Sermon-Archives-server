@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+<link rel="icon" type="image/x-icon" href="./data/icon/Jared's lawncare Logo (1).png">
+ <style>
+   body {
+    background-color: chocolate;
+    padding: 30px;
+   }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "JT23681") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+ <p style="font-size: 30pt;">Sermon Archive Server</p>
+ <p>Pastor of Brown's Chapel and Manown church ONLY.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="./server/index.html" target="_blank" onclick="return checkPassword();">
+  Click here to submit password and enter server
+ </a>
+</body>
+</html>
